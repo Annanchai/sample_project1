@@ -12,8 +12,20 @@
     padding-top: 20px;
   }
 
+  .tabMobileImage {
+    display: none;
+  }
+
   h1 {
     padding-top: 100px;
+  }
+
+  .heading {
+    display: block;
+  }
+
+  .tabletHeading {
+    display: none;
   }
 
   p {
@@ -46,5 +58,70 @@
     padding: 15px 25px 15px 25px;
     border-radius: 5px;
     color: #f9f6f1;
+  }
+}
+
+/* Responsive style for mobile*/
+
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    display: block;
+
+    .imageContainer {
+      display: none;
+    }
+  }
+
+  .contentContainer {
+    padding: 20px;
+
+    .heading {
+      display: none;
+    }
+
+    .tabletHeading {
+      display: block;
+    }
+    .tabMobileImage {
+      display: block;
+      padding-top: 20px;
+
+      img {
+        width: 550px;
+      }
+    }
+  }
+}
+
+/* Responsive style for tablet*/
+
+@media only screen and (max-width: 1070px) {
+  .mainContainer {
+    display: block;
+
+    .imageContainer {
+      display: none;
+    }
+  }
+
+  .contentContainer {
+    padding: 20px;
+
+    .heading {
+      display: none;
+    }
+
+    .tabletHeading {
+      display: block;
+    }
+
+    .tabMobileImage {
+      display: block;
+      padding-top: 20px;
+
+      img {
+        width: 1020px;
+      }
+    }
   }
 }

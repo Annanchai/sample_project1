@@ -29,8 +29,20 @@ body {
   padding-top: 20px;
 }
 
+.contentContainer .tabMobileImage {
+  display: none;
+}
+
 .contentContainer h1 {
   padding-top: 100px;
+}
+
+.contentContainer .heading {
+  display: block;
+}
+
+.contentContainer .tabletHeading {
+  display: none;
 }
 
 .contentContainer p {
@@ -65,5 +77,57 @@ body {
   padding: 15px 25px 15px 25px;
   border-radius: 5px;
   color: #f9f6f1;
+}
+
+/* Responsive style for mobile*/
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    display: block;
+  }
+  .mainContainer .imageContainer {
+    display: none;
+  }
+  .contentContainer {
+    padding: 20px;
+  }
+  .contentContainer .heading {
+    display: none;
+  }
+  .contentContainer .tabletHeading {
+    display: block;
+  }
+  .contentContainer .tabMobileImage {
+    display: block;
+    padding-top: 20px;
+  }
+  .contentContainer .tabMobileImage img {
+    width: 550px;
+  }
+}
+
+/* Responsive style for tablet*/
+@media only screen and (max-width: 1070px) {
+  .mainContainer {
+    display: block;
+  }
+  .mainContainer .imageContainer {
+    display: none;
+  }
+  .contentContainer {
+    padding: 20px;
+  }
+  .contentContainer .heading {
+    display: none;
+  }
+  .contentContainer .tabletHeading {
+    display: block;
+  }
+  .contentContainer .tabMobileImage {
+    display: block;
+    padding-top: 20px;
+  }
+  .contentContainer .tabMobileImage img {
+    width: 1020px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
